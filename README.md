@@ -6,6 +6,7 @@
 1. 集成SpringBoot并完美支持swagger-spring的配置项
 2. 支持API通过正则表达式分组配置
 3. 支持分环境配置。可以在开发、测试、UAT查看文档，而在生产环境不可查看
+4. 集成kni4j，生成Swagger Api文档的增强解决方案
 ```
 
 ### 二、使用介绍
@@ -42,3 +43,4 @@ spring:
           email: abc@xxx.com                        # 联系人邮箱
           url: http://www.abc.com                   # 联系地址
 ```
+
