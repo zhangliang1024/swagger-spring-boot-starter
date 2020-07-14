@@ -55,4 +55,8 @@ spring:
           email: abc@xxx.com                        # 联系人邮箱
           url: http://www.abc.com                   # 联系地址
 ```
-
+### 三、访问地址
+```markdown
+http://ip:port/swagger-ui.html
+http://ip:port/doc.html
+```
