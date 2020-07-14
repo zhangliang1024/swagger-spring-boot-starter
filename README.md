@@ -7,6 +7,18 @@
 2. 支持API通过正则表达式分组配置
 3. 支持分环境配置。可以在开发、测试、UAT查看文档，而在生产环境不可查看
 4. 集成kni4j，生成Swagger Api文档的增强解决方案
+5. 新增Authorization权鉴配置：目前支持ApiKey | BasicAuth鉴权模式，默认ApiKey
+    # 鉴权策略ID，对应 SecurityReferences ID
+    swagger.authorization.name=Authorization
+    # 鉴权策略，可选 ApiKey | BasicAuth | None，默认ApiKey
+    swagger.authorization.type=ApiKey
+    # 鉴权传递的Header参数
+    swagger.authorization.key-name=token
+    # 需要开启鉴权URL的正则, 默认^.*$匹配所有URL
+    swagger.authorization.auth-regex=^.*$
+备注：
+    1.默认已经在全局开启了global的SecurityReferences，无需配置任何参数就可以使用；
+    2.全局鉴权的范围在可以通过以上参数auth-regex进行正则表达式匹配控制；
 ```
 
 ### 二、使用介绍
